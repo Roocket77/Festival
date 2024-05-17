@@ -1,0 +1,62 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+
+html{
+    font: 62.5%;
+    box-sizing: border-box;
+    
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: v.$fontPrincipal;
+    font-size: 2rem;
+
+    &.over-flow-hidden{
+        overflow: hidden;
+    }
+}
+p{
+    font-size: 2rem;
+    color: v.$negro;
+}
+.contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+
+}
+a{
+    text-decoration: none;
+    color: v.$negro;
+
+}
+h1, h2, h3{
+    margin: 0 0 3rem 0;
+    
+}
+h1{
+    font-size: 3.6rem;
+}
+h2{
+    font-size: 2.5rem;
+
+}
+h3{
+    font-size: 2rem;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+body > section{
+    padding: 100px 0;
+}
